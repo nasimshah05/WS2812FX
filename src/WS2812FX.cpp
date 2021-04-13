@@ -705,7 +705,7 @@ uint16_t WS2812FX::mode_color_wipe_random(void) {
     _seg_rt->aux_param = get_random_wheel_index(_seg_rt->aux_param);
   }
   uint32_t color = color_wheel(_seg_rt->aux_param);
-  return color_wipe(color, color, false) * 2;
+  return color_wipe(color, color, true) * 2;
 }
 
 
